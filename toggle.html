@@ -48,3 +48,48 @@
 </script>
 </html>
 
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple TODO List</title>
+</head>
+<body>
+    <h1>TODO List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList">
+    </ul>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("taskInput");
+            var taskText = taskInput.value.trim();
+            if (taskText === "") {
+                alert("Please enter a valid task.");
+                return;
+            }
+
+            var taskList = document.getElementById("taskList");
+            var newTaskItem = document.createElement("li");
+            newTaskItem.innerHTML = `
+                ${taskText}
+                <button onclick="deleteTask(this)">Delete</button>
+            `;
+
+            taskList.appendChild(newTaskItem);
+            taskInput.value = "";
+        }
+
+        function deleteTask(button) {
+            var taskItem = button.parentNode;
+            taskItem.parentNode.removeChild(taskItem);
+        }
+    </script>
+</body>
+</html> -->
+
