@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Increase</title>
+    <style>
+        /* Optional CSS styles for button appearance */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Count: <span id="count">0</span></h1>
+    <button onclick="increaseCount()">Increase Count</button>
+
+    <script>
+        // JavaScript to handle the count increase
+        let count = 0; // Initialize the count variable
+
+        function increaseCount() {
+            count++; // Increment the count by 1
+            document.getElementById('count').innerText = count; // Update the count on the page
+        }
+    </script>
+</body>
+</html>969
