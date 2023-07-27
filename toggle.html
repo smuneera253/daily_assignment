@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 20px;
+        }
+        .bulb{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 830px;
+            
+        }
+        .button{
+            margin-top: 20px;
+        }
+        .btn{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb"></div>
+    <button class="btn" onclick="ON()">clickme</button>
+</body>
+<script>
+    let button=document.querySelector(".btn");
+    light=false;
+    function ON(){
+        light= !light
+        if(light){
+            let bulb=document.querySelector(".bulb")
+            bulb.style.backgroundColor="yellow";
+        }
+        else{
+            let bulb=document.querySelector(".bulb")
+            bulb.style.backgroundColor="white";
+        }
+    }
+
+</script>
+</html>
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple TODO List</title>
+</head>
+<body>
+    <h1>TODO List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList">
+    </ul>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("taskInput");
+            var taskText = taskInput.value.trim();
+            if (taskText === "") {
+                alert("Please enter a valid task.");
+                return;
+            }
+
+            var taskList = document.getElementById("taskList");
+            var newTaskItem = document.createElement("li");
+            newTaskItem.innerHTML = `
+                ${taskText}
+                <button onclick="deleteTask(this)">Delete</button>
+            `;
+
+            taskList.appendChild(newTaskItem);
+            taskInput.value = "";
+        }
+
+        function deleteTask(button) {
+            var taskItem = button.parentNode;
+            taskItem.parentNode.removeChild(taskItem);
+        }
+    </script>
+</body>
+</html> -->
+

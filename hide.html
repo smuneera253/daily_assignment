@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show/Hide Content</title>
+    <style>
+        /* CSS to hide the content initially */
+        #additional-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="toggleContent()">Toggle Content</button>
+        <div id="additional-content">
+            <!-- Additional content goes here -->
+            <p>This is the additional content that will be shown or hidden.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the visibility of the content
+        function toggleContent() {
+            var content = document.getElementById('additional-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html> 
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS to hide the content initially */
+    .ph {
+        display: none;
+    }
+</style>
+<body>
+    <button onClick="search()">click me</button>
+    <div>
+        <p class="ph">Hii Muneera how are you how is your health</p>
+    </div>
+
+    <script>
+        //let button = document.querySelector(".btn");
+
+        function search() {
+            let paragraph = document.querySelector(".ph");
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+            } else {
+                paragraph.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
