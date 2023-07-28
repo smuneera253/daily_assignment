@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        /* width: 300px;
+        height: 100px; */
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+        border: 1px solid black;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-top: 100px;
+    }
+    .btn{
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+
+    }
+    .hello{
+        color: chartreuse;
+    }
+</style>
+<body>
+    <div class="box">
+        <p class="hello">Hello word</p>
+        <input type="text" class="fontSize" placeholder="font-size"/>
+        <button class="btn">submit</button>
+</div>
+</body>
+<script>
+        let btn = document.querySelector(".btn");
+        btn.onclick = function() {
+            let box = document.querySelector(".fontSize").value;
+            document.querySelector(".hello").style.fontSize = box;
+        };
+</script>
+</html>
